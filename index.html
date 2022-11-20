@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3School Online Web Tutorials</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+    <!-- css link -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- boostsrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- cart section -->
+    <div class="offcanvas offcanvas-end" id="cart">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Course Fee</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body" id="cartBody">
+
+
+            <!-- <button id="total" class="btn btn-secondary" type="button">Submit</button> -->
+        </div>
+
+        <div class="offcanvas-footer mx-4" id="offcanvas-footer">
+            <h4>Total</h4>
+            <h5 id="total"></h5>
+        </div>
+    </div>
+
+    <!-- navabar -->
+    <section id="navbar">
+        <div class="left">
+            <div class="img-brand">
+                <img src="assets/logo.png" alt="" width="65px">
+            </div>
+
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Menu <i class="fa-sharp fa-solid fa-caret-down"></i> </a></li>
+                    <li><a href="#">Tutorials <i class="fa-sharp fa-solid fa-caret-down"></i> </a></li>
+                    <li><a href="#">References <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+                    <li><a href="#">Exercises <i class="fa-sharp fa-solid fa-caret-down"></i></a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <span class="search">
+                <i class="fa-solid fa-dharmachakra"></i>
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <button type="button">Pro</button>
+            <button type="button">Get Certified</button>
+            <button type="button">Log In</button>
+            <button type="button" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart">Cart</button>
+        </div>
+    </section>
+
+    <!-- home -->
+    <sectoin id="home">
+        <div class="content">
+            <h1>Learn to Code</h1>
+            <h3>With the world's largest web developer site.</h3>
+            <input type="search" placeholder="Search our tutorials, e.g. HTML"><button><i class="fa-solid fa-magnifying-glass"></i></button></i><br>
+            <a href="#">Not Sure Where To Begin?</a>
+
+        </div>
+        <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35" style="fill: rgb(40, 42, 53);"></path>
+        </svg>
+    </sectoin>
+
+    <!-- HTML -->
+    <section id="html" class="course">
+        <div class="left">
+            <h1>HTML</h1>
+            <h4>the language for building web pages</h4><br>
+            <button id="a_html" type="button">Add HTML</button><br>
+            <button type="button">Video Tutorial</button><br>
+            <button type="button">HTML Reference</button><br>
+            <button type="button">Get Certified</button>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <div class="card-head">
+                    <h1>HTML Example:</h1>
+                </div>
+
+                <div class="code">
+                    <div class="w3-code htmlHigh notranslate green-border" style="height:300px">
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br>
+
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>title<span style="color:mediumblue">&gt;</span></span>HTML Tutorial<span style="color:brown"><span  style="color:mediumblue">&lt;</span>/title
+                        <span style="color:mediumblue">&gt;</span></span><br>
+
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br>
+
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>h1<span style="color:mediumblue">&gt;</span></span>This is a heading<span style="color:brown"><span  style="color:mediumblue">&lt;</span>/h1
+                        <span style="color:mediumblue">&gt;</span></span><br>
+
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>This is a paragraph.<span style="color:brown"><span  style="color:mediumblue">&lt;</span>/p
+                        <span style="color:mediumblue">&gt;</span> </span><br><br>
+
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button type="button">Try it Yourself</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CSS -->
+    <section id="css" class="course">
+        <div class="left">
+            <h1>CSS</h1>
+            <h4>the language for styling web pages</h4><br>
+            <button type="button" id="a_css">Add CSS</button><br>
+            <button type="button">HTML Reference</button><br>
+            <button type="button">Get Certified</button>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <div class="card-head">
+                    <h1>CSS Example:</h1>
+                </div>
+                <div class="code">
+                    <div>
+                        <span style="color:brown"> body <span style="color:black">{</span><span style="color:red"><br>
+                        &nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span> lightblue
+                        <span style="color:black">;</span></span><br></span><span style="color:black">}</span>
+
+                        <br> h1 <span style="color:black">{</span><span style="color:red"><br> &nbsp; color
+                        <span style="color:mediumblue"><span style="color:black">:</span> white<span style="color:black">;</span></span><br> &nbsp; text-align<span style="color:mediumblue"><span style="color:black">:</span> center<span style="color:black">;</span></span>
+                        <br></span><span style="color:black">}</span>
+
+                        <br>p <span style="color:black">{</span><span style="color:red"><br>&nbsp; font-family
+                        <span style="color:mediumblue"><span style="color:black">:</span>verdana<span style="color:black">;</span></span><br></span><span style="color:black">}</span></span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button">Try it Yourself</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <section id="js" class="course">
+        <div class="left">
+            <h1>JAVASCRIPT</h1>
+            <h4>the language for programming web pages</h4><br>
+            <button type="button" id="a_js">Add Javascript</button><br>
+            <button type="button">Javascript Reference</button><br>
+            <button type="button">Get Certified</button>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <div class="card-head">
+                    <h1>Javascript Example:</h1>
+                </div>
+                <div class="code">
+                    <div>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>button<span style="color:red"> onclick<span style="color:mediumblue">="myFunction()"</span></span><span style="color:mediumblue">&gt;</span></span><span style="color: black;"> Click Me!</span>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>/button<span style="color:mediumblue">&gt;</span></span><br><br>
+                        <span style="color:brown"><span style="color:mediumblue">&lt;</span>script<span style="color:mediumblue">&gt;</span></span><span style="color:black"><br>
+                        <span  style="color:mediumblue">function</span> myFunction() {<br><span style="color:red">
+                        </span> &nbsp; <span style="color:mediumblue">let</span> x = document.<span style="color:black">getElementById</span>(<span style="color:brown">"demo"</span>);<br><span style="color:red">
+                        </span>&nbsp; x.<span style="color:black">style</span>.<span style="color:black">fontSize</span> = <span style="color:brown">"25px"</span>; <br><span style="color:red">
+                        </span>&nbsp; x.<span style="color:black">style</span>.<span style="color:black">color</span> = <span style="color:brown">"red"</span>; <br>}<br>
+                        </span><span style="color:brown"><span  style="color:mediumblue">&lt;</span>/script<span style="color:mediumblue">&gt;</span></span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button">Try it Yourself</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PYTHON -->
+    <section id="python" class="course">
+        <div class="left">
+            <h1>Python</h1>
+            <h4>A popular programming language</h4><br>
+            <button type="button" id="a_py">Add Python</button><br>
+            <button type="button">Python Reference</button><br>
+            <button type="button">Get Certified</button>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <div class="card-head">
+                    <h1>Python Example:</h1>
+                </div>
+                <div class="code">
+                    <div>
+                        <span style="color:black"><span style="color:red"></span>
+                        <span style="color:mediumblue">if</span>
+                        <span style="color:red">5</span> &gt; <span style="color:red">2</span>:<br>&nbsp; print(
+                        <span style="color:brown">"Five is greater than two!"</span>)<span style="color:red"></span></span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button">Try it Yourself</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SQL -->
+    <section id="sql" class="course">
+        <div class="left">
+            <h1>SQL</h1>
+            <h4>A language for accessing databases</h4><br>
+            <button type="button" id="a_sql">Add SQL</button><br>
+            <button type="button">SQL Reference</button><br>
+            <button type="button">Get Certified</button>
+        </div>
+
+        <div class="right">
+            <div class="card">
+                <div class="card-head">
+                    <h1>SQL Example:</h1>
+                </div>
+                <div class="code">
+                    <div>
+                        <span style="color:mediumblue">SELECT</span> * <span style="color:mediumblue">FROM</span> Customers<br>
+                        <span style="color:mediumblue">WHERE</span> Country=<span style="color:brown">'Mexico' </span> ;</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button type="button">Try it Yourself</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- courses section -->
+    <section id="courses">
+        <div class="row-1">
+            <div class="card">
+                <h1>PHP</h1>
+                <h6>A web server programming language</h6>
+                <button type="button" id="ph">Add PHP</button>
+            </div>
+
+            <div class="card">
+                <h1>jQuery</h1>
+                <h6>A JS library for developing web pages</h6>
+                <button type="button" id="jq">Add jQuery</button>
+            </div>
+            <div class="card">
+                <h1>Java</h1>
+                <h6>A programming language</h6>
+                <button type="button" id="java">Add Java</button>
+            </div>
+            <div class="card">
+                <h1>C++</h1>
+                <h6>A programming language</h6>
+                <button type="button" id="c">Add C++</button>
+            </div>
+            <div class="card">
+                <h1>W3.CSS</h1>
+                <h6>A CSS framework for faster and better responsive web pages</h6>
+                <button type="button" id="w3">Add W3.CSS</button>
+            </div>
+            <div class="card">
+                <h1>Bootstrap</h1>
+                <h6>A CSS framework for designing better web pages</h6>
+                <button type="button" id="boot">Add Bootstrap</button>
+            </div>
+        </div>
+
+        <div class="row-2">
+            <button type="button"><h1>C</h1></button>
+            <button type="button"><h1>C#</h1></button>
+            <button type="button"><h1>R</h1></button>
+            <button type="button"><h1>Kotlin</h1></button>
+            <button type="button"><h1>Node.js</h1></button>
+            <button type="button"><h1>React</h1></button>
+            <button type="button"><h1>JSON</h1></button>
+            <button type="button"><h1>AngularJS</h1></button>
+            <button type="button"><h1>MySQL</h1></button>
+            <button type="button"><h1>XML</h1></button>
+            <button type="button"><h1>Sass</h1></button>
+            <button type="button"><h1>Icons</h1></button>
+            <button type="button"><h1>RWD</h1></button>
+            <button type="button"><h1>Graphics</h1></button>
+            <button type="button"><h1>SVG</h1></button>
+            <button type="button"><h1>Canvas</h1></button>
+            <button type="button"><h1>Raspberry Pi</h1></button>
+            <button type="button"><h1>Cyber Security</h1></button>
+            <button type="button"><h1>Colors</h1></button>
+            <button type="button"><h1>Git</h1></button>
+            <button type="button"><h1>Matplotlib</h1></button>
+            <button type="button"><h1>NumPy</h1></button>
+            <button type="button"><h1>Pandas</h1></button>
+            <button type="button"><h1>SciPy</h1></button>
+            <button type="button"><h1>ASP</h1></button>
+            <button type="button"><h1>Accessibility</h1></button>
+            <button type="button"><h1>AppML</h1></button>
+            <button type="button"><h1>Go</h1></button>
+            <button type="button"><h1>TypeScript</h1></button>
+            <button type="button"><h1>Django</h1></button>
+            <button type="button"><h1>Excel</h1></button>
+            <button type="button"><h1>Google Sheets</h1></button>
+            <button type="button"><h1>Machine Learning</h1></button>
+            <button type="button"><h1>Artificial Intelligence</h1></button>
+            <button type="button"><h1>Statistics</h1></button>
+            <button type="button"><h1>Data Science</h1></button>
+
+        </div>
+
+    </section>
+
+    <!-- javascript Link -->
+    <script src="main.js"></script>
+</body>
+
+</html>
